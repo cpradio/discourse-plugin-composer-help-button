@@ -148,8 +148,8 @@ Discourse.ReplygifController = Discourse.Controller.extend(Discourse.ModalFuncti
 Discourse.ApplicationRoute.reopen({
     actions: {
         showComposerHelp: function (composerView) {
-            Discourse.Route.showModal(this, 'composerHelp');
-            this.controllerFor('composerHelp').setProperties({ composerView: composerView });
+            Discourse.Route.showModal(this, 'composer-help');
+            this.controllerFor('composer-help').setProperties({ composerView: composerView });
         }
     }
 });
