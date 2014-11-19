@@ -1,6 +1,7 @@
 # Composer Help Button
 
 This plugin adds a help icon to the composer window giving you the ability to show a help document to the user.
+![](https://raw.githubusercontent.com/cpradio/composer-help-button/master/screenshot.png)
 
 ## Installation
 
