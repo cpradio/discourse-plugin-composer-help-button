@@ -1,4 +1,9 @@
 en:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          composer_help_settings: 'Composer Help Settings'
   js:
     composer_help:
       title: "Composer Help"

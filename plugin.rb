@@ -4,6 +4,7 @@
 # authors: Matthew Wilkin
 
 
+register_asset "javascripts/admin/templates/site_settings/setting_text.hbs"
 register_asset "javascripts/discourse/templates/composerHelp.js.handlebars"
 register_asset "javascripts/composerHelp.js"
 

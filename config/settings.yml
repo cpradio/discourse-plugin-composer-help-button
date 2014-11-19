@@ -1,0 +1,4 @@
+composer_help_settings:
+  modal_content:
+    default: text''
+    client: ''
