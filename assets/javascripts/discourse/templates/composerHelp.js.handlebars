@@ -2,8 +2,10 @@
     {{#if loadingTags}}
         loading...
     {{else }}
-        {{#view Discourse.ComposerHelpContentView model=this}}
-            {{{view.parsedContent}}}
-        {{/view}}
+        <div class="composerHelp-content">
+            {{#view Discourse.ComposerHelpContentView model=this}}
+                {{{view.parsedContent}}}
+            {{/view}}
+        </div>
     {{/if}}
 </div>

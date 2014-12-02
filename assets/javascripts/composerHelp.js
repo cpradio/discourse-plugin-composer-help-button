@@ -1,6 +1,5 @@
 Discourse.ComposerHelpContentView = Discourse.View.extend({
     tagName: "div",
-    classNames: ["composer-help-content"],
     parsedContent: function() {
         return this.get("model.content");
     }.property("model.content")
