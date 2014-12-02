@@ -41,11 +41,13 @@ Discourse.ComposerView.reopen({
     initEditor: function () {
         // overwrite and wrap.
         this._super();
-        var view = this;
-        var btn = $('<button class="wmd-button"><span class="fa fa-question"></span></button>');
-        btn.click(function () {
-            view.get("controller").send("showComposerHelp", view);
-        });
-        $("#wmd-button-row").append(btn);
+        if (Discourse.SiteSettings.modal_url) {
+            var view = this;
+            var btn = $('<button class="wmd-button"><span class="fa fa-question"></span></button>');
+            btn.click(function () {
+                view.get("controller").send("showComposerHelp", view);
+            });
+            $("#wmd-button-row").append(btn);
+        }
     }
 });
