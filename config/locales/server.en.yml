@@ -1,3 +1,3 @@
 en:
   site_settings:
-    composer_help_content: 'html content for the help window'
+    modal_url: 'URL to receive the content for the help window'

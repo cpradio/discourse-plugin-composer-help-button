@@ -1,4 +1,4 @@
 composer_help_settings:
-  modal_content:
-    default: text''
+  modal_url:
+    default: ''
     client: ''
