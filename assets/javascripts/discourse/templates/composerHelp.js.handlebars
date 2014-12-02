@@ -3,7 +3,7 @@
         loading...
     {{else }}
         {{#view Discourse.ComposerHelpContentView model=this}}
-            {{view.content}}
+            {{{view.parsedContent}}}
         {{/view}}
     {{/if}}
 </div>
