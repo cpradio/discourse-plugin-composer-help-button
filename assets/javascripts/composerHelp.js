@@ -24,7 +24,7 @@ Discourse.ComposerHelpController = Discourse.Controller.extend(Discourse.ModalFu
         Discourse.ajax(Discourse.SiteSettings.modal_url + '.json').then(function(resp) {
             this.set('content', resp);
             this.refresh();
-        }).bind(this)
+        }.bind(this))
     }
 });
 
