@@ -4,6 +4,12 @@ This plugin adds a help icon to the composer window giving you the ability to sh
 
 ![](https://raw.githubusercontent.com/cpradio/composer-help-button/master/screenshot.png)
 
+There is also an Admin Setting to identify which topic to use for the content of the modal window.
+![](https://raw.githubusercontent.com/cpradio/composer-help-button/master/AdminSetting.png)
+
+Clicking on the button in the composer window will produce the following modal window to the user
+![](https://raw.githubusercontent.com/cpradio/composer-help-button/master/ComposerModal.png)
+
 ## Installation
 
 Clone this repository in your Discourse plugins directory, rebuild the container and you are all set.
