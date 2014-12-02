@@ -1,3 +1,9 @@
 <div class="modal-body composerHelp-modal" style="overflow: visible">
-
+    {{#if loadingTags}}
+        loading...
+    {{else }}
+        {{#view Discourse.ComposerHelpContentView model=this}}
+            {{view.content}}
+        {{/view}}
+    {{/if}}
 </div>
