@@ -1,28 +1,20 @@
-Discourse.ComposerHelpContentView = Discourse.View.extend({
-    tagName: "div",
-    parsedContent: function() {
-        return this.get("model.content");
-    }.property("model.content")
-});
-
 Discourse.ComposerHelpView = Discourse.ModalBodyView.extend({
     title: function() {return I18n.t("composer_help.title"); }.property()
 });
 
 Discourse.ComposerHelpController = Discourse.Controller.extend(Discourse.ModalFunctionality, {
     loading: true,
-    content: '',
+    parsedContent: '',
 
     refresh: function() {
         this.set("loading", true);
-
     },
 
     init: function(){
         this._super();
-        this.setProperties({"loading": true, "content": ''});
+        this.setProperties({"loading": true, "parsedContent": ''});
         Discourse.ajax(Discourse.SiteSettings.modal_url + '.json').then(function(resp) {
-            this.set('content', resp.post_stream.posts[0].cooked);
+            this.set('parsedContent', resp.post_stream.posts[0].cooked);
             this.refresh();
         }.bind(this))
     }
