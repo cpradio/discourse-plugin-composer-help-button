@@ -5,7 +5,6 @@
 
 
 register_asset "javascripts/admin/templates/site_settings/setting_text.hbs"
-register_asset "javascripts/discourse/templates/composerHelp.js.handlebars"
-register_asset "javascripts/composerHelp.js"
+register_asset "javascripts/discourse/templates/composer-help.js.handlebars"
 
-register_asset 'stylesheets/composerHelp.scss'
+register_asset 'stylesheets/composer-help.scss'
