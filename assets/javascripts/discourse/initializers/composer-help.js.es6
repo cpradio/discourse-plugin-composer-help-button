@@ -10,7 +10,7 @@ export default
         ApplicationRoute.reopen({
             actions: {
                 showComposerHelp: function (composerView) {
-                    showModal(this, 'composer-help');
+                    showModal('composer-help');
                     this.controllerFor('composer-help').setProperties({composerView: composerView});
                 }
             }
