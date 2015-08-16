@@ -26,7 +26,7 @@ export default
                     btn.click(function () {
                         view.get("controller").send("showComposerHelp", view);
                     });
-                    $("#wmd-button-row").append(btn);
+                    $("#wmd-button-row,.wmd-button-row").append(btn);
                 }
             }
         });

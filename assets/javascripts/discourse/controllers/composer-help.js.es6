@@ -1,7 +1,6 @@
-import Controller from 'discourse/controllers/controller';
 import ModalFunctionality from 'discourse/mixins/modal-functionality';
 
-export default Controller.extend(ModalFunctionality, {
+export default Ember.Controller.extend(ModalFunctionality, {
     loading: true,
     parsedContent: '',
 
