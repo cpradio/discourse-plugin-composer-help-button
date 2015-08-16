@@ -1,7 +1,7 @@
 plugins:
-  composerhelp_enabled:
+  composer_help_enabled:
     default: false
     client: true
-  composerhelp_modal_url:
+  composer_help_modal_url:
     default: ''
     client: true
