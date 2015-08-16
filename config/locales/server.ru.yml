@@ -1,3 +1,4 @@
 ru:
   site_settings:
+    composerhelp_enabled: 'composer help enabled'
     composerhelp_modal_url: 'URL содержимого модального окна. Удостоверьтесь, что вы создали доступную для всех тему.'
