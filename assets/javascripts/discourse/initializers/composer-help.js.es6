@@ -20,7 +20,7 @@ export default
             initEditor: function () {
                 // overwrite and wrap.
                 this._super();
-                if (Discourse.SiteSettings.modal_url) {
+                if (Discourse.SiteSettings.composerhelp_modal_url) {
                     var view = this;
                     var btn = $('<button class="wmd-button"><span class="fa fa-question"></span></button>');
                     btn.click(function () {

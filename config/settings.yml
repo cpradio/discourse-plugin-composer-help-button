@@ -1,4 +1,4 @@
-composer_help_settings:
-  modal_url:
+plugins:
+  composerhelp_modal_url:
     default: ''
     client: true
