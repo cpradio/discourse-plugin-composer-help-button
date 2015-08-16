@@ -20,9 +20,11 @@ export default
             initEditor: function () {
                 // overwrite and wrap.
                 this._super();
-                if (Discourse.SiteSettings.modal_url) {
+                if (Discourse.SiteSettings.composer_help_enabled
+                    && Discourse.SiteSettings.composer_help_modal_url) {
                     var view = this;
-                    var btn = $('<button class="wmd-button"><span class="fa fa-question"></span></button>');
+                    var button_text = I18n.t("composer_help.button_text");
+                    var btn = $('<button class="wmd-button wmd-composer-help-button" title="' + button_text + '" aria-label="' + button_text + '"></button>');
                     btn.click(function () {
                         view.get("controller").send("showComposerHelp", view);
                     });

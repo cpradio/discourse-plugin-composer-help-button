@@ -5,3 +5,7 @@
     overflow-y: scroll;
   }
 }
+
+.wmd-composer-help-button:before {
+  content: "\f128"
+}

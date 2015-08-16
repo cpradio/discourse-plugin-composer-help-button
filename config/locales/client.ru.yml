@@ -1,9 +1,5 @@
 ru:
-  admin_js:
-    admin:
-      site_settings:
-        categories:
-          composer_help_settings: 'Кнопка Помощь'
   js:
     composer_help:
+      button_text: "Кнопка Помощь"
       title: "Кнопка Помощь"

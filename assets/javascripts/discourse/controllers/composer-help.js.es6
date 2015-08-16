@@ -11,7 +11,7 @@ export default Ember.Controller.extend(ModalFunctionality, {
     init: function () {
         this._super();
         this.setProperties({"loading": true, "parsedContent": ''});
-        Discourse.ajax(Discourse.SiteSettings.modal_url + '.json').then(function (resp) {
+        Discourse.ajax(Discourse.SiteSettings.composer_help_modal_url + '.json').then(function (resp) {
             this.set('parsedContent', resp.post_stream.posts[0].cooked);
             this.refresh();
         }.bind(this))

@@ -1,3 +1,4 @@
 en:
   site_settings:
-    modal_url: 'URL to receive the content for the help window. Be sure to create the topic in a location that everyone has access to it.'
+    composer_help_enabled: 'Show help button on composer window?'
+    composer_help_modal_url: 'URL to receive the content for the help window. Be sure to create the topic in a location that everyone has access to it.'
