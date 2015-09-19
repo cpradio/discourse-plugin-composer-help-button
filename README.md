@@ -15,7 +15,7 @@ Clicking on the button in the composer window will produce the following modal w
 
 ## Installation
 
-Clone this repository in your Discourse plugins directory, rebuild the container and you are all set.
+Follow the directions at [Install a Plugin](https://meta.discourse.org/t/install-a-plugin/19157) using https://github.com/cpradio/composer-help-button.git as the repository URL.
 
 ## Authors
 
