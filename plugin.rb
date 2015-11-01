@@ -1,8 +1,8 @@
-# name: composer-help-button
+# name: discourse-plugin-composer-help-button
 # about: Add a help button to the composer window
 # version: 0.3
 # authors: Matthew Wilkin
-# url: https://github.com/cpradio/composer-help-button
+# url: https://github.com/cpradio/discourse-plugin-composer-help-button
 
 enabled_site_setting :composer_help_enabled
 
