@@ -54,7 +54,7 @@ export default
 
           onToolbarCreate(toolbar => {
             toolbar.addButton({
-              id: "composer-help-button",
+              id: "composer_help_button",
               group: "extras",
               icon: "question",
               action: 'showComposerHelp'

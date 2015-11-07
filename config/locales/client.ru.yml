@@ -1,5 +1,7 @@
 ru:
   js:
+    composer:
+      composer_help_button_title:  "Кнопка Помощь"
     composer_help:
       button_text: "Кнопка Помощь"
       title: "Кнопка Помощь"
