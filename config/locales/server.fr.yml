@@ -1,0 +1,4 @@
+fr:
+  site_settings:
+    composer_help_enabled: 'Afficher le bouton Aide ?'
+    composer_help_modal_url: 'Lien vers le contenu qui sera affiché dans la fenêtre Aide. Soyez sûrs de créer un sujet dans une rubrique accessible à tous.'

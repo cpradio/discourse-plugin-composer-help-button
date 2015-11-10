@@ -1,0 +1,7 @@
+fr:
+  js:
+    composer:
+      composer_help_button_title:  "Aide"
+    composer_help:
+      button_text: "Aide"
+      title: "Aide"
