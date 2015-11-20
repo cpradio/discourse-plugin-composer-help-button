@@ -2,6 +2,7 @@ import showModal from 'discourse/lib/show-modal';
 import ApplicationRoute from 'discourse/routes/application';
 import ComposerView from 'discourse/views/composer';
 import { onToolbarCreate } from 'discourse/components/d-editor';
+import NewComposer from 'discourse/components/d-editor';
 
 export default
 {
@@ -14,8 +15,25 @@ export default
       if (siteSettings.composer_help_enabled
         && siteSettings.composer_help_modal_url)
       {
-        if (typeof Discourse.ComposerEditorComponent === "undefined")
-        {
+        if (NewComposer !== "undefined") {
+          NewComposer.reopen({
+            actions: {
+              showComposerHelp: function()
+              {
+                showModal('composer-help');
+              }
+            }
+          });
+
+          onToolbarCreate(toolbar => {
+            toolbar.addButton({
+              id: "composer_help_button",
+              group: "extras",
+              icon: "question",
+              action: 'showComposerHelp'
+            });
+          });
+        } else {
           ApplicationRoute.reopen({
             actions: {
               showComposerHelp: function (composerView)
@@ -39,26 +57,6 @@ export default
               });
               $("#wmd-button-row,.wmd-button-row").append(btn);
             }
-          });
-        }
-        else
-        {
-          Discourse.DEditorComponent.reopen({
-            actions: {
-              showComposerHelp: function()
-              {
-                showModal('composer-help');
-              }
-            }
-          });
-
-          onToolbarCreate(toolbar => {
-            toolbar.addButton({
-              id: "composer_help_button",
-              group: "extras",
-              icon: "question",
-              action: 'showComposerHelp'
-            });
           });
         }
       }
