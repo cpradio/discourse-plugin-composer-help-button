@@ -1,9 +1,10 @@
-export default Em.Component.extend({
+import { bufferedRender } from 'discourse-common/lib/buffered-render';
+
+export default Em.Component.extend(bufferedRender({
     tagName: "div",
-    render: function(buffer) {
+    rerenderTriggers: ['model.parsedContent'],
+
+    buildBuffer(buffer) {
         buffer.push(this.get("model.parsedContent"));
-    },
-    parsedContentChanged: function() {
-        this.rerender();
-    }.observes('model.parsedContent')
-});
+    }
+}));
