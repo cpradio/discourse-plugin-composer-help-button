@@ -6,5 +6,4 @@
 
 enabled_site_setting :composer_help_enabled
 
-register_asset "javascripts/discourse/templates/composer-help.hbs"
 register_asset 'stylesheets/composer-help.scss'
