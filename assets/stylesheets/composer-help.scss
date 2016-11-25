@@ -1,4 +1,6 @@
-.composer-help-modal {
+#composer-help-modal {
+  overflow: visible;
+
   .composer-help-content {
     max-height: 350px;
     min-height: 200px;

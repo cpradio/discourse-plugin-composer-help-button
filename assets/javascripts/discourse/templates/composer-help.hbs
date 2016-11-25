@@ -1,9 +1,9 @@
-<div class="modal-body composer-help-modal" style="overflow: visible">
-    {{#if loadingTags}}
-        {{i18n loading}}
-    {{else }}
-        <div class="composer-help-content">
-            {{composer-help-content model=this}}
-        </div>
-    {{/if}}
-</div>
+{{#d-modal-body id="composer-help-modal"}}
+  {{#if loadingTags}}
+    {{i18n loading}}
+  {{else }}
+    <div class="composer-help-content">
+        {{composer-help-content model=this}}
+    </div>
+  {{/if}}
+{{/d-modal-body}}

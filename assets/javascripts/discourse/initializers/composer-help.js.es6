@@ -12,7 +12,7 @@ function initializePlugin(api)
     Composer.reopen({
       actions: {
         showComposerHelp: function () {
-          showModal('composer-help');
+          showModal('composer-help', { title: 'composer_help.title' });
         }
       }
     });
