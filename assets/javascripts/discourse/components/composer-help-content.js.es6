@@ -1,10 +1,8 @@
-import { bufferedRender } from 'discourse-common/lib/buffered-render';
-
-export default Em.Component.extend(bufferedRender({
+const HelpComposerContentComponent = Em.Component.extend({
     tagName: "div",
-    rerenderTriggers: ['model.parsedContent'],
+    rowContents: null,
+    
+    this.set("rowContents", this.get("model.parsedContent"));
+});
 
-    buildBuffer(buffer) {
-        buffer.push(this.get("model.parsedContent"));
-    }
-}));
+export default HelpComposerContentComponent;
