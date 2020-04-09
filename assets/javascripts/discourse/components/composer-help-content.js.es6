@@ -1,4 +1,4 @@
-const ComposerHelpContentComponent = Em.Component.extend({
+const ComposerHelpContentComponent = Ember.Component.extend({
     tagName: "div",
     content: null,
     
