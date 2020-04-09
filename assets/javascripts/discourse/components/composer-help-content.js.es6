@@ -1,10 +1,8 @@
-const ComposerHelpContentComponent = Ember.Component.extend({
+import Component from "@ember/component";
+import { bufferedProperty } from "discourse/mixins/buffered-content";
+
+const ComposerHelpContentComponent = Component.extend(bufferedProperty("model"), {
     tagName: "div",
-    content: null,
-    
-    didReceiveAttrs() {
-        this.set("content", this.model.parsedContent);
-    }
 });
 
 export default ComposerHelpContentComponent;
