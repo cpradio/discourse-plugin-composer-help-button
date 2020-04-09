@@ -1,10 +1,8 @@
-import { bufferedRender } from 'discourse-common/lib/buffered-render';
+import Component from "@ember/component";
+import { bufferedProperty } from "discourse/mixins/buffered-content";
 
-export default Em.Component.extend(bufferedRender({
+const ComposerHelpContentComponent = Component.extend(bufferedProperty("model"), {
     tagName: "div",
-    rerenderTriggers: ['model.parsedContent'],
+});
 
-    buildBuffer(buffer) {
-        buffer.push(this.get("model.parsedContent"));
-    }
-}));
+export default ComposerHelpContentComponent;
