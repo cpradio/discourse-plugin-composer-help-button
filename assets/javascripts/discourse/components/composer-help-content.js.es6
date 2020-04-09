@@ -3,7 +3,7 @@ const ComposerHelpContentComponent = Em.Component.extend({
     content: null,
     
     didReceiveAttrs() {
-        this.set("content", this.get("model.parsedContent"));
+        this.set("content", this.model.parsedContent.htmlSafe());
     }
 });
 
