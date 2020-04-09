@@ -1,8 +1,8 @@
 const ComposerHelpContentComponent = Em.Component.extend({
     tagName: "div",
-    rowContents: null,
+    content: null,
     
-    this.set("rowContents", this.get("model.parsedContent"));
+    this.set("content", this.get("model.parsedContent"));
 });
 
 export default ComposerHelpContentComponent;
