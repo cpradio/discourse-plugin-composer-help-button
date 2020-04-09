@@ -3,7 +3,7 @@ const ComposerHelpContentComponent = Ember.Component.extend({
     content: null,
     
     didReceiveAttrs() {
-        this.set("content", this.model.parsedContent.htmlSafe());
+        this.set("content", this.model.parsedContent);
     }
 });
 
